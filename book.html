@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fear Categories</title>
+    <style>
+        /* General Body Styling */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #b437bb; /* Background color option */
+            color: #d7d7d7;
+            text-align: center;
+        }
+
+        /* Header Styling */
+        h1 {
+            font-size: 2.5rem;
+            color: #d3c9c9;
+            margin-top: 30px;
+        }
+
+        /* Container for the book grid */
+        .book-container {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr); /* Two columns */
+            gap: 20px;
+            padding: 20px;
+            justify-items: center;
+        }
+
+        /* Individual Book Card */
+        .book-card {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            background-color: #d664aa;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            overflow: hidden;
+            width: 90%;
+            max-width: 600px;
+        }
+
+        /* Book Cover */
+        .book-cover {
+            width: 150px;
+            height: 200px;
+            border-radius: 8px;
+            overflow: hidden;
+            margin-right: 20px;
+        }
+
+        iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+
+        /* Book Description */
+        .book-description {
+            max-width: 400px;
+            text-align: left;
+            padding: 10px;
+            font-size: 1rem;
+            color: #fefdfd;
+        }
+
+        /* Book Title */
+        .book-title {
+            font-size: 1.3rem;
+            font-weight: bold;
+            color: #f8f6f6;
+            margin-bottom: 10px;
+        }
+
+        /* Responsive Styling */
+        @media screen and (max-width: 768px) {
+            .book-container {
+                grid-template-columns: 1fr; /* Stack on small screens */
+            }
+
+            .book-card {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .book-description {
+                text-align: center;
+                margin-top: 10px;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Book Previews</h1>
+
+    <div class="book-container">
+        <!-- Book 1 -->
+        <div class="book-card">
+            <div class="book-cover">
+                <iframe src="https://books.google.co.in/books?id=abSRDQAAQBAJ&newbks=0&lpg=PP1&dq=Face%20the%20fear%20and%20do%20it%20anyway&pg=PT50&output=embed" loading="lazy"></iframe>
+            </div>
+            <div class="book-description">
+                <div class="book-title">Face the Fear and Do It Anyway</div>
+                <p>This book is designed to help you overcome fear, whether it’s fear of failure, rejection, or any other fear that holds you back in life.</p>
+            </div>
+        </div>
+
+        <!-- Book 2 -->
+        <div class="book-card">
+            <div class="book-cover">
+                <iframe src="https://books.google.co.in/books?id=2C7gDwAAQBAJ&newbks=0&lpg=PA1&dq=Me%20and%20my%20Fear&pg=PT2&output=embed" loading="lazy"></iframe>
+            </div>
+            <div class="book-description">
+                <div class="book-title">Me and My Fear</div>
+                <p>This book offers an intimate journey through the author’s struggle with fear and how it shaped their life experiences.</p>
+            </div>
+        </div>
+
+        <!-- Book 3 -->
+        <div class="book-card">
+            <div class="book-cover">
+                <iframe src="https://books.google.co.in/books?id=1yyRDQAAQBAJ&newbks=0&lpg=PA6&dq=Me%20and%20my%20Fear&pg=PA6&output=embed" loading="lazy"></iframe>
+            </div>
+            <div class="book-description">
+                <div class="book-title">Facing the Fear</div>
+                <p>Explore how to conquer your deepest fears, with real-life examples and scientific insights into overcoming anxiety and fear.</p>
+            </div>
+        </div>
+
+        <!-- Book 4 -->
+        <div class="book-card">
+            <div class="book-cover">
+                <iframe src="https://books.google.co.in/books?id=0KvIEAAAQBAJ&newbks=0&lpg=PP1&dq=Me%20and%20my%20Fear&pg=PT7&output=embed" loading="lazy"></iframe>
+            </div>
+            <div class="book-description">
+                <div class="book-title">The Fear Factor</div>
+                <p>A guide on how to manage and use fear to propel yourself toward success in both personal and professional life.</p>
+            </div>
+        </div>
+
+        <!-- Book 5 -->
+        <div class="book-card">
+            <div class="book-cover">
+                <iframe src="https://books.google.co.in/books?id=Th0sjjd2AvEC&newbks=0&lpg=PP1&dq=Me%20and%20my%20Fear&pg=PP1&output=embed" loading="lazy"></iframe>
+            </div>
+            <div class="book-description">
+                <div class="book-title">Understanding Fear</div>
+                <p>This book delves into the psychology of fear and offers actionable strategies to conquer it.</p>
+            </div>
+        </div>
+
+        <!-- Book 6 -->
+        <div class="book-card">
+            <div class="book-cover">
+                <iframe src="https://books.google.co.in/books?id=V0w2EAAAQBAJ&newbks=0&lpg=PP1&dq=Me%20and%20my%20Fear&pg=PT9&output=embed" loading="lazy"></iframe>
+            </div>
+            <div class="book-description">
+                <div class="book-title">Fear: The Invisible Enemy</div>
+                <p>This book explores how fear can be a silent destroyer and how to break free from its grip.</p>
+            </div>
+        </div>
+
+        <!-- Additional books can be added here similarly -->
+    </div>
+
+</body>
+</html>
+
